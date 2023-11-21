@@ -11,6 +11,19 @@ vim.o.scrolloff = 10
 
 vim.wo.number = true
 
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
+
+local packer_bootstrap = ensure_packer()
+
 vim.cmd [[packadd packer.nvim]]
 vim.cmd [[xnoremap p P]]
 
@@ -21,6 +34,12 @@ require('packer').startup(function(use)
   --use 'nvim-tree/nvim-web-devicons'
   use 'lewis6991/gitsigns.nvim'
   use 'folke/tokyonight.nvim'
+
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
 
 vim.g.nvim_tree_show_icons = {
