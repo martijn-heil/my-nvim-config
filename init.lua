@@ -34,6 +34,11 @@ require('packer').startup(function(use)
   --use 'nvim-tree/nvim-web-devicons'
   use 'lewis6991/gitsigns.nvim'
   use 'folke/tokyonight.nvim'
+  use 'udalov/kotlin-vim'
+  use {
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
+      requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
@@ -77,6 +82,12 @@ local function open_nvim_tree()
   -- open the tree
   require("nvim-tree.api").tree.open()
 end
+
+local telescopeBuiltin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', telescopeBuiltin.find_files, {})
+vim.keymap.set('n', '<leader>fg', telescopeBuiltin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', telescopeBuiltin.buffers, {})
+vim.keymap.set('n', '<leader>fh', telescopeBuiltin.help_tags, {})
 
 vim.cmd [[colorscheme tokyonight]]
 
