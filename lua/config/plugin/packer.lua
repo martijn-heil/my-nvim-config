@@ -23,7 +23,6 @@ return function()
     use "nvim-tree/nvim-tree.lua"
     --use "nvim-tree/nvim-web-devicons"
     use "lewis6991/gitsigns.nvim"
-    use "folke/tokyonight.nvim"
     use "udalov/kotlin-vim"
     use {
       "nvim-telescope/telescope.nvim", branch = "0.1.x",
@@ -64,6 +63,13 @@ return function()
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
     use 'lukas-reineke/virt-column.nvim'
+
+    -- Themes
+    use "folke/tokyonight.nvim"
+    use "tiagovla/tokyodark.nvim"
+    use "scottmckendry/cyberdream.nvim"
+    use "rose-pine/neovim"
+    use "Mofiqul/vscode.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

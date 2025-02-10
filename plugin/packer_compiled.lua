@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["cyberdream.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cyberdream.nvim",
+    url = "https://github.com/scottmckendry/cyberdream.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
@@ -120,12 +125,17 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/mason.nvim"
   },
   neodim = {
-    config = { "\27LJ\2\nú\1\0\0\4\0\t\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0024\3\0\0=\3\b\2B\0\2\1K\0\1\0\fdisable\nregex\1\4\0\0\14[uU]nused\21[nN]ever [rR]ead\19[nN]ot [rR]ead\thide\1\0\3\17virtual_text\1\14underline\1\nsigns\1\1\0\6\16blend_color\f#000000\nalpha\4\0€€ ÿ\3\thide\0\fdisable\0\nregex\0\rpriority\3€\1\nsetup\vneodim\frequire\0" },
+    config = { "\27LJ\2\nú\1\0\0\4\0\t\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0024\3\0\0=\3\b\2B\0\2\1K\0\1\0\fdisable\nregex\1\4\0\0\14[uU]nused\21[nN]ever [rR]ead\19[nN]ot [rR]ead\thide\1\0\3\nsigns\1\17virtual_text\1\14underline\1\1\0\6\thide\0\rpriority\3€\1\16blend_color\f#000000\nalpha\4\0€€ ÿ\3\fdisable\0\nregex\0\nsetup\vneodim\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
     path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\neodim",
     url = "https://github.com/zbirenbaum/neodim"
+  },
+  neovim = {
+    loaded = true,
+    path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -157,6 +167,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tokyodark.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyodark.nvim",
+    url = "https://github.com/tiagovla/tokyodark.nvim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
@@ -171,6 +186,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\virt-column.nvim",
     url = "https://github.com/lukas-reineke/virt-column.nvim"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\m.heil\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 

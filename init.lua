@@ -22,7 +22,7 @@ require("config/plugin/indent-blankline")()
 require("config/plugin/nvim-cmp")()
 require("config/plugin/virt-column")()
 
-vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme tokyodark]]
 
 -- Advanced setup
 require("config/language/csharp")()
